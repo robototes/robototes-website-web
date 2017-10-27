@@ -62,9 +62,6 @@ app.use(async (ctx, next) => {
     if (ctx.status >= 400) ctx.throw(ctx.status)
     else logHTTP(`\t--> ${ctx.status} OK`)
   } catch (err) {
-    // Make sure we have an error code
-    err.status = err.status || ctx.status
-
     // Render the error page
     ctx.render('error', {
       error: err
