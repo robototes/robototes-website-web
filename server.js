@@ -7,7 +7,7 @@ const nconf = require('nconf')
 const Koa = require('koa')
 
 // Logging
-const log = debug('robototes-website:server')
+const log = debug('robototes-website-web:server')
 const logHTTP = debug('http')
 
 // Load configuration
