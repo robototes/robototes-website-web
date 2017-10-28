@@ -8,10 +8,15 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![GO ROBOTOTES!](https://img.shields.io/badge/GO-ROBOTOTES!-brightred.svg)](https://www.robototes.com)
 
-### Software requirements
+### About
 
-* `node.js` version 8 or greater is recommended
-* `yarn` version 1.2.1 or greater is recommended
+This repository is a Docker microservice that contains the public pages of the
+[Robototes' Website](https://www.robototes.com). This includes parts of the website such as the homepage, the
+about page, and the contact us page.
+
+For common documentation regarding the requirements, upkeep, and testing of our microservices, please see our
+[global documentation](https://github.com/robototes/robototes-website/blob/master/DOCS.md). Sections
+regarding microservice-specific configuration, features, and differences in commands can be found below.
 
 ### <a id="configuration">Configuring the server</a>
 
@@ -39,28 +44,10 @@ include:
 * `x9SZw6TwIqfmvrLZ/kz1o0Ossjmn728BnBKpUFqGNVM=` (Comodo ECC Domain Validation Secure Server CA)
 * `tey1EE7fk3hATntrqvJd0pRDLpjqawZ7YSlOiA/staQ=` (sni32250.cloudflaressl.com, for robototes.com)
 
-### <a id="testing">Testing</a>
-
-We use [ava](https://www.npmjs.com/package/ava) and [supertest](https://www.npmjs.com/package/supertest)
-to test the server, including our routing and middleware. When writing new tests, make sure to follow
-the documentation of the libraries mentioned above. The tests can be found in the `code/tests` folder,
-and can be run using the following:
-
-```shell
-yarn test
-```
-
-This will run the tests and create code coverage files using [nyc](https://www.npmjs.com/package/nyc)
-that can be submitted from a CI test to
-[Codecov](https://codecov.io/gh/robototes/robototes-website-web/branches/master) using the Codecov CLI.
-
-We use [Semaphore CI](https://semaphoreci.com/robototes/robototes-website-web) as our CI/CD service. Once
-tested, our code is deployed automatically to a staging site, and can be manually deployed to our
-production server.
-
 ### <a id="debugmode">Debug mode</a>
 
-If the `DEBUG` environment variable is set, debug mode will be activated. This changes the following:
+Refer to our [common documentation](https://github.com/robototes/robototes-website/blob/master/DOCS.md)
+for an overview of debug mode. In this microservice, debug mode changes the following:
 
 * Sets `/robots.txt` to the debug version set in the `seo.js` config
 * Disables page caching
@@ -68,45 +55,16 @@ If the `DEBUG` environment variable is set, debug mode will be activated. This c
 * Enables Pug debug mode
 * Enables the Google Analytics debug mode
 
-The `DEBUG` environment variable is shared with the [debug](https://www.npmjs.com/package/debug)
-module for logging. The recommended filter value is `robototes-website-web:*,http`, which will
-show setup information, and log HTTP requests. These are enabled by default when the server is
-run in development mode using the following command:
-
-```shell
-yarn dev
-```
-
-### Running in production
-
-To run the server in production, make sure [debug mode](#debugmode) is disabled and the
-[configuration variables](#configuration) are set correctly. Test the server, then run it using
-the following command:
-
-```shell
-yarn start
-```
+The recommended debug filter for this project is `robototes-website-web:*,http`.
 
 ### Maintainers
 
 [@dannytech](https://github.com/dannytech) and
 [@TAKBS2412](https://github.com/TAKBS2412)
 
-### Contributing
+### Contributing/Vulnerability disclosure
 
-While we do accept and encourage contributions, this site is designed and built
-exclusively for The Robototes. As such, most content comes from within the
-organization and code is written by a subteam. If you find any bugs, please feel
-free to open an issue or write a pull request.
-
-##### Vulnerability disclosure
-
-If you find a vulnerability in our site, please,
-[report it](mailto:webmaster@robototes.com). We won't sue or anything as long as
-you don't exploit any bugs and you disclose responsibly (give us time to respond
-and fix it before you tell the world). If you would like to test our security,
-please contact us at [webmaster@robototes.com](mailto:webmaster@robototes.com)
-and we can work something out
+See our common [CONTRIBUTING.md](https://github.com/robototes/robototes-website/blob/master/CONTRIBUTING.md)
 
 ### License
 
