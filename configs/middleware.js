@@ -45,15 +45,22 @@ module.exports = {
           'calendar.google.com'
         ],
         sandbox: [ 'allow-forms', 'allow-scripts', 'allow-same-origin', 'allow-popups' ],
-        objectSrc: [ "'none'" ]
+        objectSrc: [ "'none'" ],
+        reportUri: `https://report.${nconf.get('DOMAIN')}/r/default/csp/enforce`
       }
     },
-    hpkp: {
+    hpkp: { // Soon to be deprecated
       maxAge: 60 * 60 * 24 * 90,
       sha256s: nconf.get('HPKP_HASHES').split(','),
-      includeSubdomains: true
+      includeSubdomains: true,
+      reportUri: `https://report.${nconf.get('DOMAIN')}/r/default/hpkp/enforce`
     },
-    frameguard: { action: 'deny' }
+    frameguard: { action: 'deny' },
+    expectCt: {
+      enforce: true,
+      maxAge: 60 * 60 * 24 * 90,
+      reportUri: `https://report.${nconf.get('DOMAIN')}/r/default/ct/enforce`
+    }
   },
   cors: { origin: [ `cdn.${nconf.get('DOMAIN')}` ] },
   cacheControl: {
