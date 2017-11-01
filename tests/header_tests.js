@@ -8,6 +8,14 @@ module.exports = function (test) {
     test.request.get('/')
       .expect('Public-Key-Pins', /.*/, t.end)
   })
+  test.cb('Expect-CT is set', t => {
+    test.request.get('/')
+      .expect('Expect-CT', /.*/, t.end)
+  })
+  test.cb('Referrer-Policy is set', t => {
+    test.request.get('/')
+      .expect('Referrer-Policy', 'no-referrer-when-downgrade', t.end)
+  })
   test.cb('X-XSS-Protection is set and valid (mode=block)', t => {
     test.request.get('/')
       .expect('X-XSS-Protection', '1; mode=block', t.end)
