@@ -80,6 +80,7 @@ app.use(async (ctx, next) => {
 .use(middlewares.helmet.contentSecurityPolicy(middlewares.config.helmet.contentSecurityPolicy)) // CSP
 .use(middlewares.helmet.hpkp(middlewares.config.helmet.hpkp)) // HTTP Public Key Pinning
 .use(middlewares.helmet.expectCt(middlewares.config.helmet.expectCt)) // Expect-CT
+.use(middlewares.helmet.referrerPolicy(middlewares.config.helmet.referrerPolicy)) // Sets Referrer-Policy header
 .use(middlewares.helmet.xssFilter())
 .use(middlewares.helmet.frameguard(middlewares.config.helmet.frameguard)) // Prevents framing
 .use(middlewares.helmet.hidePoweredBy()) // Removes X-Powered-By header

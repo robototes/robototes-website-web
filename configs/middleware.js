@@ -60,7 +60,8 @@ module.exports = {
       enforce: true,
       maxAge: 60 * 60 * 24 * 90,
       reportUri: `https://report.${nconf.get('DOMAIN')}/r/default/ct/enforce`
-    }
+    },
+    referrerPolicy: { policy: 'no-referrer-when-downgrade' }
   },
   cors: { origin: [ `cdn.${nconf.get('DOMAIN')}` ] },
   cacheControl: {
