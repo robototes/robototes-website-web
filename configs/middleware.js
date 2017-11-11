@@ -46,14 +46,14 @@ module.exports = {
         ],
         sandbox: [ 'allow-forms', 'allow-scripts', 'allow-same-origin', 'allow-popups' ],
         objectSrc: [ "'none'" ],
-        reportUri: `https://report.${nconf.get('DOMAIN')}/r/default/csp/enforce`
+        reportUri: `https://report.${nconf.get('DOMAIN')}/r/c/csp/enforce`
       }
     },
     frameguard: { action: 'deny' },
     expectCt: {
       enforce: true,
       maxAge: 60 * 60 * 24 * 90,
-      reportUri: `https://report.${nconf.get('DOMAIN')}/r/default/ct/enforce`
+      reportUri: `https://report.${nconf.get('DOMAIN')}/r/c/ct/enforce`
     },
     referrerPolicy: { policy: 'no-referrer-when-downgrade' }
   },
