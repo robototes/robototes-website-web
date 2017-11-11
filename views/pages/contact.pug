@@ -8,9 +8,9 @@ block main
       div.col-md-4.col-sm-6.col-xs-12
         div.panel.panel-default
           div.panel-heading
-            h4.panel-title= `${teamEmail.name}`
+            h4.panel-title= teamEmail.name
           div.panel-body
-            img(src=`//cdn.${nconf.get('DOMAIN')}/media/email_images/${teamEmail.alias}@${teamEmail.domain}.${teamEmail.tld}.png` alt=`${teamEmail.alias} at ${teamEmail.domain} dot ${teamEmail.tld}`)
+            a.btn.btn-primary(href=`//www.${nconf.get('DOMAIN')}/api/email?alias=${teamEmail.alias}&domain=${teamEmail.domain}`) Email
   h3 Robotics Leadership
   div.row
     each member in members.teamMembers
@@ -19,7 +19,7 @@ block main
           div.panel-heading
             h4.panel-title= `${member.name} (${member.role})`
           div.panel-body
-            img(src=`//cdn.${nconf.get('DOMAIN')}/media/email_images/${member.alias}@${member.domain}.${member.tld}.png` alt=`${member.alias} at ${member.domain} dot ${member.tld}`)
+            a.btn.btn-primary(href=`//www.${nconf.get('DOMAIN')}/api/email?alias=${member.alias}&domain=${member.domain}`) Email
   h3 Website developers
   div.row
     each developer in members.developers
