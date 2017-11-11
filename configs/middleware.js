@@ -49,12 +49,6 @@ module.exports = {
         reportUri: `https://report.${nconf.get('DOMAIN')}/r/default/csp/enforce`
       }
     },
-    hpkp: { // Soon to be deprecated
-      maxAge: 60 * 60 * 24 * 90,
-      sha256s: nconf.get('HPKP_HASHES').split(','),
-      includeSubdomains: true,
-      reportUri: `https://report.${nconf.get('DOMAIN')}/r/default/hpkp/enforce`
-    },
     frameguard: { action: 'deny' },
     expectCt: {
       enforce: true,
