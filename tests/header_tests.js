@@ -4,15 +4,11 @@ module.exports = function (test) {
     test.request.get('/')
       .expect('Content-Security-Policy', /.*/, t.end)
   })
-  test.cb('HPKP is set', t => {
-    test.request.get('/')
-      .expect('Public-Key-Pins', /.*/, t.end)
-  })
   test.cb('Expect-CT is set', t => {
     test.request.get('/')
       .expect('Expect-CT', /.*/, t.end)
   })
-  test.cb('Referrer-Policy is set', t => {
+  test.cb('Referrer-Policy is set and valid', t => {
     test.request.get('/')
       .expect('Referrer-Policy', 'no-referrer-when-downgrade', t.end)
   })
