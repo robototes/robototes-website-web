@@ -42,7 +42,8 @@ module.exports = {
         ],
         childSrc: [
           'docs.google.com',
-          'calendar.google.com'
+          'calendar.google.com',
+          'accounts.google.com'
         ],
         sandbox: [ 'allow-forms', 'allow-scripts', 'allow-same-origin', 'allow-popups' ],
         objectSrc: [ "'none'" ],
