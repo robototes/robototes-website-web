@@ -26,7 +26,6 @@ The following environment variables can be set, the server will not start withou
 * `PORT` (*required, default `3000`*) The port to listen for requests on
 * `DOMAIN` (*required*) The second-level domain that the server resides on
 * `G_TRACKING_ID` (*required*) The Google analyics tracking ID to report to
-* `HPKP_HASHES` (*required*) see [HPKP Hashes](#hpkphashes)
 * `DEBUG` (*optional*) see [Debug mode](#debugmode)
 * `DATABASE_HOST` (*required*) The IP address that the MongoDB server is listening on
 * `DATABASE_PORT` (*required*) The port that the MongoDB server is listening on

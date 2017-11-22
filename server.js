@@ -17,7 +17,6 @@ nconf.env()
     'IP',
     'DOMAIN',
     'G_TRACKING_ID',
-    'HPKP_HASHES',
     'DATABASE_HOST',
     'DATABASE_PORT'
   ])
