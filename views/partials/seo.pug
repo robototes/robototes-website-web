@@ -31,4 +31,4 @@ block seo
   
   // Google Analytics
   script window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create',{trackingId:'#{nconf.get('G_TRACKING_ID')}',cookieDomain:'#{nconf.get('DOMAIN')}'}),ga('send',{hitType:'pageview'});
-  script(type='text/javascript' src=`https://www.google-analytics.com/analytics${nconf.get('DOMAIN') != null ? '_debug' : ''}.js` async)
+  script(src=`https://www.google-analytics.com/analytics${nconf.get('DOMAIN') != null ? '_debug' : ''}.js` async)

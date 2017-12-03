@@ -89,5 +89,5 @@ block main
               span.sr-only= sponsor.image.alt
 
 append scripts
-  script(type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js' integrity='sha256-+oeQRyZyY2StGafEsvKyDuEGNzJWAbWqiO2L/ctxF6c=' crossorigin='anonymous')
-  script(type='text/javascript' src=`//cdn.${nconf.get('DOMAIN')}/js/about.js`)
+  script(src='//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js' integrity='sha256-+oeQRyZyY2StGafEsvKyDuEGNzJWAbWqiO2L/ctxF6c=' crossorigin='anonymous')
+  script(src=`//cdn.${nconf.get('DOMAIN')}/js/about.js`)
