@@ -16,7 +16,7 @@ block main
   h4 You might try #[a(href='#' onclick='window.location.reload()') refreshing the page]
   h4 Or, if you ended up in the wrong place, #[a(href=`https://www.${nconf.get('DOMAIN')}/`) here's our homepage]
 
-  if nconf.get('DOMAIN') != null
+  if nconf.get('DEBUG') != null
     // Debug info
     div.well
       h2 Debug info
