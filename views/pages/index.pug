@@ -8,7 +8,7 @@ block main
   div.row
     div.col-sm-12
       div.main-carousel
-        each image, index in slideshowImages
+        each image, index in slideshow
           div.carousel-cell
             img(src=`//cdn.${nconf.get('DOMAIN')}/media/slideshow/${image.filename}` alt=image.title title=image.title)
 

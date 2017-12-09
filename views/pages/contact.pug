@@ -2,31 +2,50 @@ extends layout.pug
 
 block main
   h1 Contact us
-  h3 Team emails
+  h3 Team
   div.row
-    each teamEmail in members.teamEmails
+    each team in contact.team
       div.col-md-4.col-sm-6.col-xs-12
         div.panel.panel-default
           div.panel-heading
-            h4.panel-title= teamEmail.name
-          div.panel-body
-            a.btn.btn-primary(href=`//www.${nconf.get('DOMAIN')}/api/email?alias=${teamEmail.alias}&domain=${teamEmail.domain}`) Email
+            h4.panel-title= team.name
+          div.panel-body.btn-toolbar
+            each contactMethod in team.contact
+              if (contactMethod.type === 'email')
+                a.btn.btn-primary(href=`//www.${nconf.get('DOMAIN')}/api/email?alias=${contactMethod.alias}&domain=${contactMethod.domain}`)
+                  i.fa.fa-envelope &nbsp;
+                  span Email
   h3 Robotics Leadership
   div.row
-    each member in members.teamMembers
+    each member in contact.members
       div.col-md-4.col-sm-6.col-xs-12
         div.panel.panel-default
           div.panel-heading
             h4.panel-title= `${member.name} (${member.role})`
-          div.panel-body
-            a.btn.btn-primary(href=`//www.${nconf.get('DOMAIN')}/api/email?alias=${member.alias}&domain=${member.domain}`) Email
+          div.panel-body.btn-toolbar
+            each contactMethod in member.contact
+              if (contactMethod.type === 'email')
+                a.btn.btn-primary(href=`//www.${nconf.get('DOMAIN')}/api/email?alias=${contactMethod.alias}&domain=${contactMethod.domain}`)
+                  i.fa.fa-envelope &nbsp;
+                  span Email
+              else if (contactMethod.type === 'github')
+                a.btn.btn-primary(href=`https://github.com/${contactMethod.username}` target='_blank')
+                  i.fa.fa-github &nbsp;
+                  span GitHub
   h3 Website developers
   div.row
-    each developer in members.developers
+    each developer in contact.developers
       div.col-md-4.col-sm-6.col-xs-12
         div.panel.panel-default
           div.panel-heading
             h4.panel-title= `${developer.name}`
-          div.panel-body
-            span GitHub:&nbsp;
-            a(href=`https://github.com/${developer.github}` target='_blank')= `@${developer.github}`
+          div.panel-body.btn-toolbar
+            each contactMethod in developer.contact
+              if (contactMethod.type === 'email')
+                a.btn.btn-primary(href=`//www.${nconf.get('DOMAIN')}/api/email?alias=${contactMethod.alias}&domain=${contactMethod.domain}`)
+                  i.fa.fa-envelope &nbsp;
+                  span Email
+              else if (contactMethod.type === 'github')
+                a.btn.btn-primary(href=`https://github.com/${contactMethod.username}` target='_blank')
+                  i.fa.fa-github &nbsp;
+                  span GitHub

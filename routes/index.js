@@ -2,7 +2,7 @@ const js2xml = require('js2xmlparser')
 const nconf = require('nconf')
 const router = require('koa-router')()
 
-const members = require('../configs/members')
+const contact = require('../configs/contact')
 const robots = require('../configs/robots')
 const slideshow = require('../configs/slideshow')
 const sponsors = require('../configs/sponsors')
@@ -13,7 +13,7 @@ router.get('/', async ctx => {
     seo: {
       title: 'Home | Team 2412 - The Robototes'
     },
-    slideshowImages: slideshow
+    slideshow
   })
 })
 .get('/about', async ctx => {
@@ -21,8 +21,8 @@ router.get('/', async ctx => {
     seo: {
       title: 'About | Team 2412 - The Robototes'
     },
-    robots: robots,
-    sponsors: sponsors
+    robots,
+    sponsors
   })
 })
 .get('/resources', ctx => {
@@ -34,7 +34,7 @@ router.get('/', async ctx => {
     seo: {
       title: 'Contact Us | Team 2412 - The Robototes'
     },
-    members: members
+    contact
   })
 })
 .get('/events', async ctx => {
