@@ -1,6 +1,6 @@
 extends layout.pug
 
-block main
+append main
   h1 About
 
   // Who are we
@@ -71,10 +71,20 @@ block main
               li= feature
       div.col-sm-6.col-xs-12
         if robot.image_filename
-          if robot.image_alt
-            img.img-responsive.lazy(data-original=`//cdn.${nconf.get('DOMAIN')}/media/robot_imgs/${robot.image_filename}` alt=robot.image_alt)
-          else if robot.name && robot.year
-            img.img-responsive.lazy(data-original=`//cdn.${nconf.get('DOMAIN')}/media/robot_imgs/${robot.image_filename}` alt=`${robot.name}, our ${robot.year} robot.`)
+          -
+            let alt
+            if (robot.image_alt) {
+              alt = robot.image_alt
+            } else if (robot.name && robot.year) {
+              alt = `${robot.name}, our ${robot.year} robot.`
+            } else if (robot.name) {
+              alt = robot.name
+            } else {
+              alt = robot.image_filename
+            }
+          img.img-responsive.lazy.hidden(data-original=`//cdn.${nconf.get('DOMAIN')}/media/robot_imgs/${robot.image_filename}` alt=alt)
+          noscript
+            img.img-responsive(src=`//cdn.${nconf.get('DOMAIN')}/media/robot_imgs/${robot.image_filename}` alt=alt)
 
   // Sponsors
   h2 Sponsors

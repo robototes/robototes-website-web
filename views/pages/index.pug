@@ -3,12 +3,12 @@ extends layout.pug
 append css
   link(rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.9/flickity.min.css' integrity='sha256-y1P8WxaELbBdWi1eAH2q5+KCzvsvsQnorvnhs9PTryw=' crossorigin='anonymous')
 
-block main
+append main
   // Image carousel
   div.row
     div.col-sm-12
       div.main-carousel
-        each image, index in slideshow
+        each image in slideshow
           div.carousel-cell
             img(src=`//cdn.${nconf.get('DOMAIN')}/media/slideshow/${image.filename}` alt=image.title title=image.title)
 
