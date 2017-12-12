@@ -37,10 +37,10 @@ router.get('/', async ctx => {
     contact
   })
 })
-.get('/events', async ctx => {
-  await ctx.render('events', {
+.get('/calendar', async ctx => {
+  await ctx.render('calendar', {
     seo: {
-      title: 'Upcoming Events | Team 2412 - The Robototes'
+      title: 'Calendar | Team 2412 - The Robototes'
     }
   })
 })
