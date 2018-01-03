@@ -41,7 +41,11 @@ append main
       div.text.col-sm-6.col-xs-12
         h3= robot.name
         if robot.dismantled
-          span.red DISMANTLED
+          p.red DISMANTLED
+        if robot.github
+          a.btn.btn-primary(href=`https://github.com/robototes/${robot.github}` target='_blank')
+            i.fa.fa-github &nbsp;
+            span View Code
         if robot.year && robot.game && robot.competitions
           h4= `Game: ${robot.game} (${robot.year})`
           // Competitions
