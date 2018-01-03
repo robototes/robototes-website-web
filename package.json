@@ -26,10 +26,10 @@
     "koa-minify": "^2.0.1",
     "koa-pug": "^3.0.0-2",
     "koa-router": "^7.2.1",
-    "nconf": "^0.9.1"
+    "nconf": "^0.10.0"
   },
   "devDependencies": {
-    "ava": "^0.23.0",
+    "ava": "^0.24.0",
     "codecov": "^3.0.0",
     "dockerlint": "^0.3.1",
     "html-validator": "^2.2.3",
