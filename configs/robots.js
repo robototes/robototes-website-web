@@ -1,13 +1,14 @@
 module.exports = [
   {
-    name: 'Tomo^2',
+    name: 'Tomo^3',
     features: [
       'Shoots T-Shirts :)',
       'Mecanum drive (forward/back, turning, and strafing movement)',
       'Front headlights'
     ],
     image_filename: 'tomo.jpg',
-    image_alt: 'Tomo^2, our T-Shirt shooting robot.'
+    image_alt: 'Tomo^3, our T-Shirt shooting robot.',
+    github: 'tomo-3'
   },
   {
     name: 'Falca',
@@ -37,7 +38,8 @@ module.exports = [
       'Chain-driven climber powered by a 775 pro',
       'Crosses baseline for extra 5 points'
     ],
-    image_filename: 'falca.jpg'
+    image_filename: 'falca.jpg',
+    github: 'Steamworks2017'
   },
   {
     name: 'Sir Costalot',
@@ -77,7 +79,8 @@ module.exports = [
       'Intake arm can be raised and lowered for help crossing defenses',
       'Low goal scoring'
     ],
-    image_filename: 'sir_costalot.jpg'
+    image_filename: 'sir_costalot.jpg',
+    github: 'Stronghold2016'
   },
   {
     name: 'YPOTRYLLA (The Yodeling Pusher of Totes and Recycling containers Yusing Lots and Lots of Acme)',
@@ -112,7 +115,8 @@ module.exports = [
       'RC "claw" to grab RCs off of center step quickly',
       '14 sensors'
     ],
-    image_filename: 'YPOTRYLLA.jpg'
+    image_filename: 'YPOTRYLLA.jpg',
+    github: 'RecycleRush'
   },
   {
     name: 'CONDOR (Cooperatively Optimized Northwest Defensive and Offensive Robot)',
@@ -151,6 +155,7 @@ module.exports = [
       '8-wheel design',
       'Two ball autonomous'
     ],
-    image_filename: 'CONDOR.jpg'
+    image_filename: 'CONDOR.jpg',
+    github: 'AerialAssist'
   }
 ]
