@@ -53,11 +53,7 @@ module.exports = function (test) {
           format: 'json'
         }, (err, data) => {
           t.ifError(err)
-          // Filter out expected messages
-          let messages = data.messages.filter(current => {
-            return current.message !== 'Element “img” is missing required attribute “src”.'
-          })
-          t.true(messages.length === 0)
+          t.true(data.messages.length === 0)
           t.end()
         })
       })

@@ -86,7 +86,7 @@ append main
             } else {
               alt = robot.image_filename
             }
-          img.img-responsive.lazy.hidden(data-original=`//cdn.${nconf.get('DOMAIN')}/media/robot_imgs/${robot.image_filename}` alt=alt)
+          img.img-responsive.lazy.hidden(data-original=`//cdn.${nconf.get('DOMAIN')}/media/robot_imgs/${robot.image_filename}` src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7' alt=alt)
           noscript
             img.img-responsive(src=`//cdn.${nconf.get('DOMAIN')}/media/robot_imgs/${robot.image_filename}` alt=alt)
 
