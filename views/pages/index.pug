@@ -1,7 +1,8 @@
 extends layout.pug
 
 append css
-  link(rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.9/flickity.min.css' integrity='sha256-y1P8WxaELbBdWi1eAH2q5+KCzvsvsQnorvnhs9PTryw=' crossorigin='anonymous')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.9/flickity.min.css' integrity='sha256-y1P8WxaELbBdWi1eAH2q5+KCzvsvsQnorvnhs9PTryw=' crossorigin='anonymous')
+  link(rel='stylesheet' href=`//cdn.${nconf.get('DOMAIN')}/css/index.css`)
 
 append main
   // Image carousel
@@ -10,7 +11,7 @@ append main
       div.main-carousel
         each image in slideshow
           div.carousel-cell
-            img(src=`//cdn.${nconf.get('DOMAIN')}/media/slideshow/${image.filename}` alt=image.title title=image.title)
+            img.slideshow(src=`//cdn.${nconf.get('DOMAIN')}/media/slideshow/${image.filename}` alt=image.title title=image.title)
 
   // News
   div.row

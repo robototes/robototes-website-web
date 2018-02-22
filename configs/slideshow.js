@@ -1,14 +1,20 @@
 module.exports = [
   {
-    filename: 'falca.jpg',
-    title: 'Falca, our 2017 robot, competed at Glacier Peak and Auburn and won several awards'
+    filename: 'IMG_141457_scaled.jpg'
   },
   {
-    filename: 'falca_climb.jpg',
-    title: 'Falca is able to lift its entire weight using a chain-driven climber'
+    filename: 'IMG_141509_scaled.jpg'
   },
   {
-    filename: 'falca_gear.jpg',
-    title: 'Falca uses a pneumatic gripper to pick gears up off the ground'
+    filename: 'IMG_141538_scaled.jpg'
+  },
+  {
+    filename: 'IMG_141557_scaled.jpg'
+  },
+  {
+    filename: 'IMG_141740_scaled.jpg'
+  },
+  {
+    filename: 'IMG_141856_scaled.jpg'
   }
 ]
