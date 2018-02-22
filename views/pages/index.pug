@@ -11,7 +11,7 @@ append main
       div.main-carousel
         each image in slideshow
           div.carousel-cell
-            img.slideshow(src=`//cdn.${nconf.get('DOMAIN')}/media/slideshow/${image.filename}` alt=image.title title=image.title)
+            img.slideshow(src=`//cdn.${nconf.get('DOMAIN')}/media/slideshow/${image.filename}` alt=(image.title || image.filename) title=image.title)
 
   // News
   div.row
