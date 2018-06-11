@@ -18,19 +18,29 @@ module.exports = {
     },
     'url': [
       {
-        loc: `https://${nconf.get('DOMAIN')}/`,
+        loc: `https://www.${nconf.get('DOMAIN')}/`,
         priority: 1,
         changefreq: 'weekly'
       },
       {
-        loc: `https://${nconf.get('DOMAIN')}/about`,
+        loc: `https://www.${nconf.get('DOMAIN')}/about`,
         priority: 0.7,
         changefreq: 'weekly'
       },
       {
-        loc: `https://${nconf.get('DOMAIN')}/contact`,
+        loc: `https://www.${nconf.get('DOMAIN')}/contact`,
         priority: 0.5,
         changefreq: 'weekly'
+      },
+      {
+        loc: `https://www.${nconf.get('DOMAIN')}/calendar`,
+        priority: 0.7,
+        changeFreq: 'daily'
+      },
+      {
+        loc: `https://blog.${nconf.get('DOMAIN')}`,
+        priority: 0.8,
+        changeFreq: 'daily'
       }
     ]
   }

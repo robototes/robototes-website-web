@@ -28,7 +28,3 @@ block seo
   meta(name='twitter:description' content=seo.description)
   meta(name='twitter:image' content=seo.image.url)
   meta(name='twitter:image:alt' content=seo.image.alt)
-  
-  // Google Analytics
-  script window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create',{trackingId:'#{nconf.get('G_TRACKING_ID')}',cookieDomain:'#{nconf.get('DOMAIN')}'}),ga('send',{hitType:'pageview'});
-  script(src=`https://www.google-analytics.com/analytics${nconf.get('DOMAIN') != null ? '_debug' : ''}.js` async)
