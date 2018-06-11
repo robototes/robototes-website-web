@@ -29,17 +29,64 @@ module.exports = {
           domain: 'robototes.com'
         }
       ]
+    },
+    {
+      name: 'Logistics',
+      contact: [
+        {
+          type: 'email',
+          alias: 'logistics',
+          domain: 'robototes.com'
+        }
+      ]
     }
   ],
   members: [
     {
-      name: 'Jacob Brouwer',
-      role: 'Team Captian',
+      name: 'Eric Kline',
+      role: 'Team Captain',
       contact: [
         {
           type: 'email',
-          alias: 's-brouwerj',
+          alias: 's-klineer',
           domain: 'bsd405.org'
+        }
+      ]
+    },
+    {
+      name: 'Yusuf Hanafy',
+      role: 'Business Lead',
+      contact: [
+        {
+          type: 'email',
+          alias: 's-hanafyy',
+          domain: 'bsd405.org'
+        }
+      ]
+    },
+    {
+      name: 'Anna Trohimovich',
+      role: 'Logistics Lead',
+      contact: [
+        {
+          type: 'email',
+          alias: 's-trohimovicha',
+          domain: 'bsd405.org'
+        }
+      ]
+    },
+    {
+      name: 'Timothy Eng',
+      role: 'Logistics Lead',
+      contact: [
+        {
+          type: 'email',
+          alias: 's-engt',
+          domain: 'bsd405.org'
+        },
+        {
+          type: 'github',
+          username: 'TAKBS2412'
         }
       ]
     },
@@ -50,6 +97,28 @@ module.exports = {
         {
           type: 'email',
           alias: 's-chenierb',
+          domain: 'bsd405.org'
+        }
+      ]
+    },
+    {
+      name: 'Amanda Manea',
+      role: 'FIRST Lead',
+      contact: [
+        {
+          type: 'email',
+          alias: 's-maneaa',
+          domain: 'bsd405.org'
+        }
+      ]
+    },
+    {
+      name: 'David Eng',
+      role: 'Scouting Lead',
+      contact: [
+        {
+          type: 'email',
+          alias: 's-engda',
           domain: 'bsd405.org'
         }
       ]
@@ -66,60 +135,23 @@ module.exports = {
       ]
     },
     {
-      name: 'Eric Kline',
-      role: 'Business',
+      name: 'Allison Tang',
+      role: 'Image Lead',
       contact: [
         {
           type: 'email',
-          alias: 's-klineer',
+          alias: 's-tangalli',
           domain: 'bsd405.org'
         }
       ]
     },
     {
-      name: 'Alexander Bowman',
-      role: 'Logistics',
+      name: 'Mikaela Ikeda',
+      role: 'Project Lead',
       contact: [
         {
           type: 'email',
-          alias: 's-bowmana',
-          domain: 'bsd405.org'
-        }
-      ]
-    },
-    {
-      name: 'Amanda Manea',
-      role: 'Scouting',
-      contact: [
-        {
-          type: 'email',
-          alias: 's-maneaa',
-          domain: 'bsd405.org'
-        }
-      ]
-    },
-    {
-      name: 'Timothy Eng',
-      role: 'FIRST Lead',
-      contact: [
-        {
-          type: 'email',
-          alias: 's-engt',
-          domain: 'bsd405.org'
-        },
-        {
-          type: 'github',
-          username: 'TAKBS2412'
-        }
-      ]
-    },
-    {
-      name: 'Anna Trohimovich',
-      role: 'Spirit Lead',
-      contact: [
-        {
-          type: 'email',
-          alias: 's-trohimovicha',
+          alias: 's-ikedam',
           domain: 'bsd405.org'
         }
       ]
@@ -132,6 +164,10 @@ module.exports = {
         {
           type: 'github',
           username: 'dannytech'
+        },
+        {
+          type: 'website',
+          url: 'https://dannytech.github.io/'
         }
       ]
     },

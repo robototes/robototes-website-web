@@ -43,9 +43,7 @@ append main
         if robot.dismantled
           p.red DISMANTLED
         if robot.github
-          a.btn.btn-primary(href=`https://github.com/robototes/${robot.github}` target='_blank')
-            i.fa.fa-github &nbsp;
-            span View Code
+          +button(`https://github.com/robototes/${robot.github}`, 'View Code', 'github', '_blank')
         if robot.year && robot.game && robot.competitions
           h4= `Game: ${robot.game} (${robot.year})`
           // Competitions

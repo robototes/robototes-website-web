@@ -10,11 +10,8 @@ append main
           div.panel-heading
             h4.panel-title= team.name
           div.panel-body.btn-toolbar
-            each contactMethod in team.contact
-              if (contactMethod.type === 'email')
-                a.btn.btn-primary(href=`//www.${nconf.get('DOMAIN')}/api/email?alias=${contactMethod.alias}&domain=${contactMethod.domain}`)
-                  i.fa.fa-envelope &nbsp;
-                  span Email
+            each contactInfo in team.contact
+              +contactButton(contactInfo)
   h3 Robotics Leadership
   div.row
     each member in contact.members
@@ -23,15 +20,8 @@ append main
           div.panel-heading
             h4.panel-title= `${member.name} (${member.role})`
           div.panel-body.btn-toolbar
-            each contactMethod in member.contact
-              if (contactMethod.type === 'email')
-                a.btn.btn-primary(href=`//www.${nconf.get('DOMAIN')}/api/email?alias=${contactMethod.alias}&domain=${contactMethod.domain}`)
-                  i.fa.fa-envelope &nbsp;
-                  span Email
-              else if (contactMethod.type === 'github')
-                a.btn.btn-primary(href=`https://github.com/${contactMethod.username}` target='_blank')
-                  i.fa.fa-github &nbsp;
-                  span GitHub
+            each contactInfo in member.contact
+              +contactButton(contactInfo)
   h3 Website developers
   div.row
     each developer in contact.developers
@@ -40,12 +30,5 @@ append main
           div.panel-heading
             h4.panel-title= `${developer.name}`
           div.panel-body.btn-toolbar
-            each contactMethod in developer.contact
-              if (contactMethod.type === 'email')
-                a.btn.btn-primary(href=`//www.${nconf.get('DOMAIN')}/api/email?alias=${contactMethod.alias}&domain=${contactMethod.domain}`)
-                  i.fa.fa-envelope &nbsp;
-                  span Email
-              else if (contactMethod.type === 'github')
-                a.btn.btn-primary(href=`https://github.com/${contactMethod.username}` target='_blank')
-                  i.fa.fa-github &nbsp;
-                  span GitHub
+            each contactInfo in developer.contact
+              +contactButton(contactInfo)
