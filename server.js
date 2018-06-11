@@ -77,21 +77,21 @@ app.use(async (ctx, next) => {
     logHTTP(`\t--> ${ctx.status} NOT OK: ${err.message}`)
   }
 })
-.use(middlewares.bodyparser())
-.use(middlewares.helmet.contentSecurityPolicy(middlewares.config.helmet.contentSecurityPolicy)) // CSP
-.use(middlewares.helmet.expectCt(middlewares.config.helmet.expectCt)) // Expect-CT
-.use(middlewares.helmet.referrerPolicy(middlewares.config.helmet.referrerPolicy)) // Sets Referrer-Policy header
-.use(middlewares.helmet.xssFilter())
-.use(middlewares.helmet.frameguard(middlewares.config.helmet.frameguard)) // Prevents framing
-.use(middlewares.helmet.hidePoweredBy()) // Removes X-Powered-By header
-.use(middlewares.helmet.ieNoOpen())
-.use(middlewares.helmet.noSniff()) // Prevents MIME type sniffing
-.use(middlewares.cors(middlewares.config.cors)) // Enables CORS
-.use(middlewares.cacheControl(middlewares.config.cacheControl))
-.use(middlewares.favicon(middlewares.config.favicon))
-.use(middlewares.compress()) // Compresses responses
-.use(router.routes())
-.use(router.allowedMethods())
+  .use(middlewares.bodyparser())
+  .use(middlewares.helmet.contentSecurityPolicy(middlewares.config.helmet.contentSecurityPolicy)) // CSP
+  .use(middlewares.helmet.expectCt(middlewares.config.helmet.expectCt)) // Expect-CT
+  .use(middlewares.helmet.referrerPolicy(middlewares.config.helmet.referrerPolicy)) // Sets Referrer-Policy header
+  .use(middlewares.helmet.xssFilter(middlewares.config.helmet.xssFilter))
+  .use(middlewares.helmet.frameguard(middlewares.config.helmet.frameguard)) // Prevents framing
+  .use(middlewares.helmet.hidePoweredBy()) // Removes X-Powered-By header
+  .use(middlewares.helmet.ieNoOpen())
+  .use(middlewares.helmet.noSniff()) // Prevents MIME type sniffing
+  .use(middlewares.cors(middlewares.config.cors)) // Enables CORS
+  .use(middlewares.cacheControl(middlewares.config.cacheControl))
+  .use(middlewares.favicon(middlewares.config.favicon))
+  .use(middlewares.compress()) // Compresses responses
+  .use(router.routes())
+  .use(router.allowedMethods())
 log('Configured routing')
 
 // Start the server

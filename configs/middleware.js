@@ -57,7 +57,8 @@ module.exports = {
       maxAge: 60 * 60 * 24 * 90,
       reportUri: 'https://robototes.report-uri.com/r/c/ct/enforce'
     },
-    referrerPolicy: { policy: 'no-referrer-when-downgrade' }
+    referrerPolicy: { policy: 'no-referrer-when-downgrade' },
+    xssFilter: { reportUri: 'https://robototes.report-uri.com/r/d/xss/enforce' }
   },
   cors: { origin: [ `cdn.${nconf.get('DOMAIN')}` ] },
   cacheControl: {

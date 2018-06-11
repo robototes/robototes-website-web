@@ -14,7 +14,7 @@ module.exports = function (test) {
   })
   test.cb('X-XSS-Protection is set and valid (mode=block)', t => {
     test.request.get('/')
-      .expect('X-XSS-Protection', '1; mode=block', t.end)
+      .expect('X-XSS-Protection', '1; mode=block; report=https://robototes.report-uri.com/r/d/xss/enforce', t.end)
   })
   test.cb('Frameguard is set and valid (DENY)', t => {
     test.request.get('/')
