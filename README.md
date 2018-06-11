@@ -30,18 +30,11 @@ The following environment variables can be set, the server will not start withou
 * `DATABASE_HOST` (*required*) The IP address that the MongoDB server is listening on
 * `DATABASE_PORT` (*required*) The port that the MongoDB server is listening on
 
-##### <a id="hpkphashes">HPKP Hashes</a>
+### Report URI
 
-HPKP, or HTTPS Public Key Pinning, is a whitelist for the certificates, intermediary CAs, and CAs
-so that our cert cannot be replaced by another others. The following is the recommended set to
-include:
-
-* `lCppFqbkrlJ3EcVFAkeip0+44VaoJUymbnOaEUk7tEU=` (AddTrust External CA Root)
-* `58qRu/uxh4gFezqAcERupSkRYBlBAvfcw7mEjGPLnNU=` (Comodo ECC CA)
-* `grX4Ta9HpZx6tSHkmCrvpApTQGo67CYDnvprLg5yRME=` (Comodo RSA CA)
-* `klO23nT2ehFDXCfx3eHTDRESMz3asj1muO+4aIdjiuY=` (Comodo RSA Domain Validation Secure Server CA)
-* `x9SZw6TwIqfmvrLZ/kz1o0Ossjmn728BnBKpUFqGNVM=` (Comodo ECC Domain Validation Secure Server CA)
-* `tey1EE7fk3hATntrqvJd0pRDLpjqawZ7YSlOiA/staQ=` (sni32250.cloudflaressl.com, for robototes.com)
+This site has been configured to use report-uri.com to track CSP and Expect-CT violations, and the violations
+can be viewed by logging in at report-uri.com. The report URI can be modified to report to a different location
+by changing the values in `middleware.js`.
 
 ### <a id="debugmode">Debug mode</a>
 
