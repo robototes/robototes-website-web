@@ -43,6 +43,17 @@ module.exports = {
   ],
   members: [
     {
+      name: 'Mrs. Herzog',
+      role: 'Team Coach',
+      contact: [
+        {
+          type: 'email',
+          alias: 'herzogk',
+          domain: 'bsd405.org'
+        }
+      ]
+    },
+    {
       name: 'Eric Kline',
       role: 'Team Captain',
       contact: [
