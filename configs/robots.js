@@ -22,6 +22,10 @@ module.exports = [
       {
         name: 'Auburn',
         url: 'https://www.thebluealliance.com/event/2017waahs'
+      },
+      {
+        name: 'Girls Gen',
+        url: 'https://www.thebluealliance.com/event/2017wagg'
       }
     ],
     awards: [
