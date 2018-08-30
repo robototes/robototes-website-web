@@ -11,6 +11,39 @@ module.exports = [
     github: 'tomo-3'
   },
   {
+    name: 'Griffin',
+    year: '2018',
+    game: 'Power Up',
+    competitions: [
+      {
+        name: 'Auburn',
+        url: 'https://www.thebluealliance.com/event/2018waahs'
+      },
+      {
+        name: 'Glacier Peak',
+        url: 'https://www.thebluealliance.com/event/2018wasno'
+      }
+    ],
+    awards: [
+      {
+        name: 'Quarterfinalists',
+        competition: 0
+      },
+      { name: 'Quarterfinalists',
+        competition: 1
+      }
+    ],
+    features: [
+      '8 wheel tank drive, powered by 6 CIMs',
+      'Shifting gearbox for high speed and power',
+      'Pneumatic intake with compliance wheels can pick cubes off the ground',
+      'Lift system uses two BAG motors and constant force springs to lift up intake',
+      'Climber uses two 775 pros to lift robot off the ground in 1-2 seconds'
+    ],
+    image_filename: 'griffin.jpg',
+    github: 'PowerUp2018'
+  },
+  {
     name: 'Falca',
     year: '2017',
     game: 'Steamworks',
