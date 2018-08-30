@@ -34,7 +34,9 @@ module.exports = [
         name: 'Semifinalists',
         competition: 1
       },
-      { name: 'Innovation in Control Award' }
+      { name: 'Innovation in Control Award',
+        competition: 1
+      }
     ],
     features: [
       '6 wheel tank drive, powered by 4 CIMs',
