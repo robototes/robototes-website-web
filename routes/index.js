@@ -13,7 +13,8 @@ router.get('/', async ctx => {
     seo: {
       title: 'Home | Team 2412 - The Robototes'
     },
-    slideshow
+    slideshow,
+    sponsors
   })
 })
   .get('/about', async ctx => {
@@ -21,8 +22,7 @@ router.get('/', async ctx => {
       seo: {
         title: 'About | Team 2412 - The Robototes'
       },
-      robots,
-      sponsors
+      robots
     })
   })
   .get('/resources', ctx => {

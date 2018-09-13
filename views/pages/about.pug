@@ -88,18 +88,6 @@ append main
           noscript
             img.img-responsive(src=`//cdn.${nconf.get('DOMAIN')}/media/robot_imgs/${robot.image_filename}` alt=alt)
 
-  // Sponsors
-  h2 Sponsors
-  p Thanks to our wonderful sponsors, we have been able to afford a robot year after year. Without these sponsors, our team would not exist.
-  div.row#sponsors
-    each sponsor in sponsors
-      div.col-xs-12.col-sm-4.col-md-3
-        div.panel.panel-default
-          div.panel-body
-            a(href=sponsor.website)
-              img.img-responsive(src=`//cdn.${nconf.get('DOMAIN')}/media/sponsors/${sponsor.image.filename}` alt=sponsor.image.alt title=sponsor.image.alt)
-              span.sr-only= sponsor.image.alt
-
 append scripts
   script(src='//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js' integrity='sha256-+oeQRyZyY2StGafEsvKyDuEGNzJWAbWqiO2L/ctxF6c=' crossorigin='anonymous')
   script(src=`//cdn.${nconf.get('DOMAIN')}/js/about.js`)
