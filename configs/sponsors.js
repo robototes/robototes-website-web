@@ -34,7 +34,6 @@ module.exports = [
       alt: 'Bellevue Schools Foundation'
     }
   },
-  
   {
     website: 'https://www.google.com/',
     image: {
