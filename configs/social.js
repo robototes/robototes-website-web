@@ -15,11 +15,6 @@ module.exports = [
     icon: 'instagram'
   },
   {
-    service: 'Google Plus',
-    url: 'https://plus.google.com/117011933295301976527',
-    icon: 'google-plus'
-  },
-  {
     service: 'GitHub',
     url: 'https://github.com/robototes',
     icon: 'github'
