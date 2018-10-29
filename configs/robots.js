@@ -22,6 +22,10 @@ module.exports = [
       {
         name: 'Glacier Peak',
         url: 'https://www.thebluealliance.com/event/2018wasno'
+      },
+      {
+        name: 'Girls Gen',
+        url: 'https://www.thebluealliance.com/event/2018wagg'
       }
     ],
     awards: [
@@ -31,6 +35,10 @@ module.exports = [
       },
       { name: 'Quarterfinalists',
         competition: 1
+      },
+      {
+        name: 'Winners',
+        competition: 2
       }
     ],
     features: [
