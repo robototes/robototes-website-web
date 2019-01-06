@@ -1,5 +1,8 @@
 module.exports = [
   {
+    filename: 'Team_Photo_2019.jpg'
+  },
+  {
     filename: 'IMG_1026.jpg'
   },
   {
