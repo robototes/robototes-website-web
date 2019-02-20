@@ -11,9 +11,38 @@ module.exports = [
     github: 'tomo-3'
   },
   {
+    name: 'Raven',
+    year: '2019',
+    game: 'Destination Deep Space',
+    gamevideo: 'https://www.youtube.com/watch?v=Mew6G_og-PI',
+    competitions: [
+      {
+        name: 'Auburn Mountainview',
+        url: 'https://www.thebluealliance.com/event/2019waamv'
+      },
+      {
+        name: 'Glacier Peak',
+        url: 'https://www.thebluealliance.com/event/2019wasno'
+      }
+    ],
+    
+    features: [
+      '8-wheel tank drive powered by 6 NEOs',
+      'Shifting drive base gearbox for high speed and power',
+      'Dual-purpose intake can pick up both hatch panels and cargo off the ground',
+      'Lift system uses 2 NEO motors to lift intake',
+      'Climber uses rail deployment system and linear actuators to climb to any HAB Level',
+      'Onboard vision guidance allows for fast and accurate semi-automated game piece placement',
+      'USB Camera gives drive team view of field during sandstorm and teleoperated mode'
+    ],
+    image_filename: 'Raven.jpg',
+    github: 'DeepSpace2019'
+  },
+  {
     name: 'Griffin',
     year: '2018',
     game: 'Power Up',
+    gamevideo: 'https://www.youtube.com/watch?v=HZbdwYiCY74',
     competitions: [
       {
         name: 'Auburn',

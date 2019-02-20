@@ -44,27 +44,31 @@ append main
           p.red DISMANTLED
         if robot.github
           +button(`https://github.com/robototes/${robot.github}`, 'View Code', 'github', '_blank')
-        if robot.year && robot.game && robot.competitions
-          h4= `Game: ${robot.game} (${robot.year})`
+        if robot.year && robot.game && robot.competitions && robot.gamevideo
+          h4 Game: #[a(href=robot.gamevideo)= robot.game]
           // Competitions
-          h4 Competed at:
+          if robot.year != 2019
+            h4 Competed at:
+          else
+            h4 Competing at:
           ul
             each competition in robot.competitions
               li
                 a(href=competition.url)= competition.name
-          // Awards
-          h4 Awards received:
-          ul
-            each award in robot.awards
-              -
-                let awardTitle
-                if (award.competition != null) {
-                  let competition = robot.competitions[award.competition]
-                  awardTitle = `${award.name} at <a href="${competition.url}">${competition.name}</a>` 
-                } else {
-                  awardTitle = award.name 
-                }
-              li!= awardTitle
+          if robot.awards
+            // Awards
+            h4 Awards received:
+            ul
+              each award in robot.awards
+                -
+                  let awardTitle
+                  if (award.competition != null) {
+                    let competition = robot.competitions[award.competition]
+                    awardTitle = `${award.name} at <a href="${competition.url}">${competition.name}</a>` 
+                  } else {
+                    awardTitle = award.name 
+                  }
+                li!= awardTitle
         if robot.features
           // Features
           h4 Features:
