@@ -12,4 +12,3 @@ module.exports = [
     filename: 'IMG_0076.JPG'
   }
 ]
-  
