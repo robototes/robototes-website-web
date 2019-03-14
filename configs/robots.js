@@ -25,6 +25,16 @@ module.exports = [
         url: 'https://www.thebluealliance.com/event/2019wasno'
       }
     ],
+    awards: [
+      {
+        name: 'Quarterfinalists',
+        competition: 0
+      },
+      {
+        name: 'Quality Award',
+        competition: 0
+      }
+    ],
     features: [
       '8-wheel tank drive powered by 6 NEOs',
       'Shifting drive base gearbox for high speed and power',
