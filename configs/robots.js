@@ -23,6 +23,10 @@ module.exports = [
       {
         name: 'Glacier Peak',
         url: 'https://www.thebluealliance.com/event/2019wasno'
+      },
+      {
+        name: 'Pacific Northwest District Championship',
+        url: 'https://www.thebluealliance.com/event/2019pncmp'
       }
     ],
     awards: [
@@ -33,6 +37,18 @@ module.exports = [
       {
         name: 'Quality Award',
         competition: 0
+      },
+      {
+        name: '6th seeded alliance captain',
+        competition: 1
+      },
+      {
+        name: 'Finalists',
+        competition: 1
+      },
+      {
+        name: 'Imagery Award',
+        competition: 1
       }
     ],
     features: [
