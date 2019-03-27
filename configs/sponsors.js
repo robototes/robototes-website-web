@@ -2,7 +2,7 @@ module.exports = [
   {
     website: 'http://www.andeavor.com/',
     image: {
-      filename: 'andeavor.png',
+      filename: 'andeavor-resized.png',
       alt: 'Andeavor'
     }
   },
@@ -16,42 +16,42 @@ module.exports = [
   {
     website: 'https://erau.edu/',
     image: {
-      filename: 'embry-riddle.png',
+      filename: 'embry-riddle-resized.png',
       alt: 'Embry-Riddle Aeronautical University'
     }
   },
   {
     website: 'https://www.microsoft.com/',
     image: {
-      filename: 'microsoft.png',
+      filename: 'microsoft-resized.png',
       alt: 'Microsoft'
     }
   },
   {
     website: 'http://www.bellevueschoolsfoundation.org/SitePages/Default.aspx',
     image: {
-      filename: 'bsfoundation.png',
+      filename: 'bsfoundation-resized.png',
       alt: 'Bellevue Schools Foundation'
     }
   },
   {
     website: 'https://www.google.com/',
     image: {
-      filename: 'google.png',
+      filename: 'google-resized.png',
       alt: 'Google'
     }
   },
   {
     website: 'http://www.k12.wa.us/',
     image: {
-      filename: 'ospi.png',
+      filename: 'ospi-resized.png',
       alt: 'Office of Superintendent of Public Instruction'
     }
   },
   {
     website: 'https://www.alaskaair.com/',
     image: {
-      filename: 'alaska.png',
+      filename: 'alaska-resized.png',
       alt: 'Alaska Airlines'
     }
   }
