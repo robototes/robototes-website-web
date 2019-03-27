@@ -1,9 +1,9 @@
 module.exports = [
   {
-    website: 'https://www.t-mobile.com/',
+    website: 'http://www.andeavor.com/',
     image: {
-      filename: 'tmobile.png',
-      alt: 'T-Mobile'
+      filename: 'andeavor.png',
+      alt: 'Andeavor'
     }
   },
   {
