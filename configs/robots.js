@@ -49,6 +49,14 @@ module.exports = [
       {
         name: 'Imagery Award',
         competition: 1
+      },
+      {
+        name: 'Quarterfinalists',
+        competition: 2
+      },
+      {
+        name: 'Imagery Award',
+        competition: 2
       }
     ],
     features: [
