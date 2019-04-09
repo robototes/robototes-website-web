@@ -28,7 +28,7 @@ module.exports = [
     }
   },
   {
-    website: 'http://www.bellevueschoolsfoundation.org/SitePages/Default.aspx',
+    website: 'http://www.bellevueschoolsfoundation.org',
     image: {
       filename: 'bsfoundation-resized.png',
       alt: 'Bellevue Schools Foundation'
