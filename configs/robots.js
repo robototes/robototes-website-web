@@ -27,6 +27,10 @@ module.exports = [
       {
         name: 'Pacific Northwest District Championship',
         url: 'https://www.thebluealliance.com/event/2019pncmp'
+      },
+      {
+        name: 'Roebling Division',
+        url: 'https://www.thebluealliance.com/event/2019roe'
       }
     ],
     awards: [
