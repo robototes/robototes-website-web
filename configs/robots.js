@@ -29,7 +29,7 @@ module.exports = [
         url: 'https://www.thebluealliance.com/event/2019pncmp'
       },
       {
-        name: 'Roebling Division',
+        name: 'Houston World Championship',
         url: 'https://www.thebluealliance.com/event/2019roe'
       }
     ],
@@ -61,6 +61,10 @@ module.exports = [
       {
         name: 'Imagery Award',
         competition: 2
+      },
+      {
+        name: 'Quarterfinalists',
+        competition: 3
       }
     ],
     features: [
