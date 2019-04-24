@@ -125,6 +125,7 @@ module.exports = [
     name: 'Falca',
     year: '2017',
     game: 'Steamworks',
+    gamevideo: 'https://www.youtube.com/watch?v=EMiNmJW7enI',
     competitions: [
       {
         name: 'Glacier Peak',
@@ -162,6 +163,7 @@ module.exports = [
     name: 'Sir Costalot',
     year: '2016',
     game: 'Stronghold',
+    gamevideo: 'https://www.youtube.com/watch?v=VqOKzoHJDjA',
     competitions: [
       {
         name: 'Glacier Peak',
@@ -204,6 +206,7 @@ module.exports = [
     dismantled: true,
     year: '2015',
     game: 'Recycle Rush',
+    gamevideo: 'https://www.youtube.com/watch?v=W6UYFKNGHJ8',
     competitions: [
       {
         name: 'Auburn Mountainview',
@@ -239,6 +242,7 @@ module.exports = [
     name: 'CONDOR (Cooperatively Optimized Northwest Defensive and Offensive Robot)',
     year: '2014',
     game: 'Aerial Assist',
+    gamevideo: 'https://www.youtube.com/watch?v=oxp4dkMQ1Vo',
     competitions: [
       {
         name: 'Glacier Peak',
