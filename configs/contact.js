@@ -39,6 +39,16 @@ module.exports = {
           domain: 'robototes.com'
         }
       ]
+    },
+    {
+      name: 'Outreach',
+      contact: [
+        {
+          type: 'email',
+          alias: 'outreach',
+          domain: 'robototes.com'
+        }
+      ]
     }
   ],
   members: [
