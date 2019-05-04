@@ -4,7 +4,7 @@ body {
     background: url("../media/rt_transparent.png") repeat;
 }
 #headerTitle {
-    font-family: "Orbitron", bold, sans-serif;
+    font-family: "Orbitron", bold, monospace;
     color: red;
     font-size: 25px;
 }
