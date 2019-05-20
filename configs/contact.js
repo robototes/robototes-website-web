@@ -64,12 +64,12 @@ module.exports = {
       ]
     },
     {
-      name: 'Eric Kline',
+      name: 'Brielle Chenier',
       role: 'Team Captain',
       contact: [
         {
           type: 'email',
-          alias: 's-klineer',
+          alias: 's-chenierb',
           domain: 'bsd405.org'
         }
       ]
@@ -97,38 +97,56 @@ module.exports = {
       ]
     },
     {
-      name: 'Timothy Eng',
-      role: 'Logistics Lead',
+      name: 'Allison Tang',
+      role: 'Logistics Assistant',
       contact: [
         {
           type: 'email',
-          alias: 's-engt',
+          alias: 's-tangalli',
           domain: 'bsd405.org'
-        },
-        {
-          type: 'github',
-          username: 'TAKBS2412'
         }
       ]
     },
     {
-      name: 'Brielle Chenier',
+      name: 'Ben Fulmer',
+      role: 'Logistics Assistant',
+      contact: [
+        {
+          type: 'email',
+          alias: 's-fulmerb',
+          domain: 'bsd405.org'
+        }
+      ]
+    },
+    {
+      name: 'Maggie Topel',
       role: 'Outreach Lead',
       contact: [
         {
           type: 'email',
-          alias: 's-chenierb',
+          alias: 's-topelm',
           domain: 'bsd405.org'
         }
       ]
     },
     {
-      name: 'Amanda Manea',
-      role: 'FIRST Lead',
+      name: 'Kayla Chenier',
+      role: 'Awards Lead',
       contact: [
         {
           type: 'email',
-          alias: 's-maneaa',
+          alias: 's-chenierk',
+          domain: 'bsd405.org'
+        }
+      ]
+    },
+    {
+      name: 'Tasbeet Iman',
+      role: 'Awards Assistant',
+      contact: [
+        {
+          type: 'email',
+          alias: 's-imant',
           domain: 'bsd405.org'
         }
       ]
@@ -145,34 +163,56 @@ module.exports = {
       ]
     },
     {
-      name: 'Jonathan Schladetzky',
+      name: 'Micah Coldiron',
+      role: 'Scouting Assistant',
+      contact: [
+        {
+          type: 'email',
+          alias: 's-coldironm',
+          domain: 'bsd405.org'
+        }
+      ]
+    },
+    {
+      name: 'Leo Ohata',
       role: 'Mechanical Lead',
       contact: [
         {
           type: 'email',
-          alias: 's-schladetzkyj',
+          alias: 's-ohatal',
           domain: 'bsd405.org'
         }
       ]
     },
     {
-      name: 'Allison Tang',
+      name: 'Zoë Marsch',
       role: 'Image Lead',
       contact: [
         {
           type: 'email',
-          alias: 's-tangalli',
+          alias: 's-marschz',
           domain: 'bsd405.org'
         }
       ]
     },
     {
-      name: 'Mikaela Ikeda',
-      role: 'Project Lead',
+      name: 'Gavin Smith',
+      role: 'Design Lead - CAD',
       contact: [
         {
           type: 'email',
-          alias: 's-ikedam',
+          alias: 's-smithg',
+          domain: 'bsd405.org'
+        }
+      ]
+    },
+    {
+      name: 'Eli Orona',
+      role: 'Programming Lead',
+      contact: [
+        {
+          type: 'email',
+          alias: 's-oronae',
           domain: 'bsd405.org'
         }
       ]
