@@ -1,5 +1,8 @@
 extends layout.pug
 
+append css
+  link(rel='stylesheet' href=`//cdn.${nconf.get('DOMAIN')}/css/contact.css`)
+
 append main
   h1 Contact us
   h3 Team
@@ -19,6 +22,10 @@ append main
         div.panel.panel-default
           div.panel-heading
             h4.panel-title= `${member.name} (${member.role})`
+          if member.img
+            - 
+              let description = `${member.name}, ${member.role}`
+            img.img-responsive(src=`//cdn.${nconf.get('DOMAIN')}/media/contact_imgs/${member.img}` alt=description title=description)
           div.panel-body.btn-toolbar
             each contactInfo in member.contact
               +contactButton(contactInfo)
