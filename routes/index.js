@@ -25,6 +25,13 @@ router.get('/', async ctx => {
       robots
     })
   })
+  .get('/imagery', async ctx => {
+    await ctx.render('imagery', {
+      seo: {
+        title: 'Imagery | Team 2412 - The Robototes'
+      }
+    })
+  })
   .get('/resources', ctx => {
     ctx.status = 301
     ctx.redirect('/contact')
