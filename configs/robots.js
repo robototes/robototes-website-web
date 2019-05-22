@@ -81,6 +81,7 @@ module.exports = [
   },
   {
     name: 'Griffin',
+    dismantled: true,
     year: '2018',
     game: 'Power Up',
     gamevideo: 'https://www.youtube.com/watch?v=HZbdwYiCY74',
@@ -123,6 +124,7 @@ module.exports = [
   },
   {
     name: 'Falca',
+    dismantled: true,
     year: '2017',
     game: 'Steamworks',
     gamevideo: 'https://www.youtube.com/watch?v=EMiNmJW7enI',
