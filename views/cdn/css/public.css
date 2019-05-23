@@ -6,7 +6,7 @@ body {
 #headerTitle {
     font-family: "Orbitron", bold, monospace;
     color: red;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 .red {
     color: red;
