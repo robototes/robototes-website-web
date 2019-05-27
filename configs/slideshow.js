@@ -3,12 +3,12 @@ module.exports = [
     filename: 'Team_Photo_2019.jpg'
   },
   {
-    filename: 'IMG_0025.JPG'
+    filename: 'minute_maid.jpg'
   },
   {
-    filename: 'IMG_0018.JPG'
+    filename: 'student_drive_team.jpg'
   },
   {
-    filename: 'IMG_0013.JPG'
+    filename: 'carrying_raven.jpg'
   }
 ]
