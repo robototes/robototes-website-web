@@ -245,6 +245,20 @@ module.exports = {
           username: 'TAKBS2412'
         }
       ]
+    },
+    {
+      name: 'Eli Orona',
+      contact: [
+        {
+          type: 'email',
+          alias: 's-oronae',
+          domain: 'bsd405.org'
+        },
+        {
+          type: 'github',
+          username: 'OroArmor'
+        }
+      ]
     }
   ]
 }
