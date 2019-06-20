@@ -50,6 +50,12 @@ router.get('/', async ctx => {
         title: 'Calendar | Team 2412 - The Robototes'
       }
     })
+  }).get('/outreach', async ctx => {
+    await ctx.render('outreach', {
+      seo: {
+        title: 'Outreach | Team 2412 - The Robototes'
+      }
+    })
   })
   .get('/blog', ctx => {
     ctx.status = 301
