@@ -7,6 +7,7 @@ const robots = require('../configs/robots')
 const slideshow = require('../configs/slideshow')
 const sponsors = require('../configs/sponsors')
 const seo = require('../configs/seo')
+const outreach = require('../configs/outreach')
 
 router.get('/', async ctx => {
   await ctx.render('index', {
@@ -54,7 +55,8 @@ router.get('/', async ctx => {
     await ctx.render('outreach', {
       seo: {
         title: 'Outreach | Team 2412 - The Robototes'
-      }
+      },
+      outreach
     })
   })
   .get('/blog', ctx => {
