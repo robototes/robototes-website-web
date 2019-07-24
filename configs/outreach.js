@@ -6,7 +6,8 @@ module.exports = {
     desc: "We will be demonstrating Raven, our competition robot, as well as running a few smaller STEM-related activities",
     location: {
       place: "The Bellevue Art Museum",
-      address: "510 Bellevue Way Ne, Bellevue, WA 98004"
+      address: "510 Bellevue Way Ne, Bellevue, WA 98004",
+      link:"https://www.google.com/maps/search/?api=1&query=510+Bellevue+Way+Ne%2C+Bellevue%2C+WA+98004"
     }
   }, {
     name: 'Sammamish LEADS',
@@ -15,7 +16,8 @@ module.exports = {
     link: "https://bsd405.org/sammamish/about/leads/",
     location: {
       place: "Sammamish High School",
-      address: "100 140th Ave SE, Bellevue, WA 98005"
+      address: "100 140th Ave SE, Bellevue, WA 98005",
+      link:"https://www.google.com/maps/search/?api=1&query=100+140th+Ave+SE%2C+Bellevue%2C+WA+98005"
     }
   }, {
     name: 'KidsQuest Museum Technology Weekend',
@@ -23,7 +25,8 @@ module.exports = {
     desc: 'We will be demonstrating one of our robots at the KidsQuest Museum in Bellevue',
     location: {
       place: 'KidsQuest Museum',
-      address: '1116 108th Ave NE, Bellevue, WA 98004'
+      address: '1116 108th Ave NE, Bellevue, WA 98004',
+      link:"https://www.google.com/maps/search/?api=1&query=1116+108th+Ave+NE%2C+Bellevue%2C+WA+98004"
     }
   }],
   pastEvents: [{
