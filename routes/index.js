@@ -10,14 +10,14 @@ const seo = require('../configs/seo')
 const outreach = require('../configs/outreach')
 
 router.get('/', async ctx => {
-    await ctx.render('index', {
-      seo: {
-        title: 'Home | Team 2412 - The Robototes'
-      },
-      slideshow,
-      sponsors
-    })
+  await ctx.render('index', {
+    seo: {
+      title: 'Home | Team 2412 - The Robototes'
+    },
+    slideshow,
+    sponsors
   })
+})
   .get('/about', async ctx => {
     await ctx.render('about', {
       seo: {

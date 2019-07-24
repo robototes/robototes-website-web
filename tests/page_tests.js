@@ -10,10 +10,6 @@ module.exports = function (test) {
     test.request.get('/about')
       .expect(200, t.end)
   })
-  test.cb('Server responds to request for imagery page (200)', t => {
-    test.request.get('/imagery')
-      .expect(200, t.end)
-  })
   test.cb('Server responds to request for contact page (200)', t => {
     test.request.get('/contact')
       .expect(200, t.end)
