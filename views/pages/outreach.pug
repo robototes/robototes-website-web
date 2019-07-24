@@ -1,0 +1,50 @@
+extends layout.pug
+
+append main
+  h1 Outreach
+  div.panel.panel-default
+    div.panel-heading
+      h3 About Outreach
+    div.panel-body
+      p One of our goals as a team is to connect with our community through STEM. We do this by participating in various outreach events, where we demonstrate one of our robots and talk about what we do as a part of FIRST. Many of our team members enjoy volunteering at these events, and we love showing our community the results of our hard work!
+      p If you wish to contact us, please email us at #[a(href='mailto:outreach@robototes.com') outreach@robototes.com]
+  div.panel.panel-default
+    div.panel-heading
+      h3 Our Team's Summer Camp!
+    div.panel-body
+      img.img-responsive.lazy(data-original=`//cdn.${nconf.get('DOMAIN')}/media/outreach/SummerCamp2019Testing.png` src=`//cdn.${nconf.get('DOMAIN')}/media/outreach/SummerCamp2019Testing.png` alt="Robototes 2412 helping kids test their robots.")
+  div.row
+    h3.container Come See Us At These Events:
+    div.col
+      each event in outreach.currentEvents
+        div.col-md-4
+          div.panel.panel-default
+            div.panel-heading
+              h4=`${event.name}`
+            div.panel-body
+              -
+                let timeloc = `${event.date} at <a href="${event.location.link}"> ${event.location.place}, ${event.location.address}</a>.`
+              p!=timeloc 
+              
+              -
+                let desc
+                desc = event.desc
+                if (event.link+""!="undefined")
+                  desc +=`<a href="${event.link}">${event.link}</a>`
+              p!=desc
+              
+  div.panel.panel-default
+    div.panel-heading
+      h3 Helping Boost STEM Learning in Our Community
+    div.panel-body
+      img.img-responsive.lazy.center-block(data-original=`//cdn.${nconf.get('DOMAIN')}/media/outreach/SummerCamp2019Programming.png` src=`//cdn.${nconf.get('DOMAIN')}/media/outreach/SummerCamp2019Programming.png` alt=" A Robotote helping kids program their robots.")
+  div.row
+    h3.container Past Events:
+    div.col
+      each event in outreach.pastEvents
+        div.col-md-3
+          div.panel.panel-default
+            div.panel-heading
+              h4=`${event.name}`
+            div.panel-body
+              p=`${event.desc}`
