@@ -10,8 +10,5 @@ module.exports = [
   },
   {
     filename: 'carrying_raven.jpg'
-  },
-  {
-    filename: 'girls_gen.jpg'
   }
 ]

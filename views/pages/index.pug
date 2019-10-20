@@ -13,15 +13,10 @@ append main
           div.carousel-cell
             img.slideshow(src=`//cdn.${nconf.get('DOMAIN')}/media/slideshow/${image.filename}` alt=(image.title || image.filename) title=image.title)
 
-  div.container
-    h1
   // News
   div.row
     // Load news blurbs
     include ../partials/news.pug
-  
-  div.row
-    include ../partials/news/sponsors.pug
 
 append scripts
   script(src='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.9/flickity.pkgd.min.js' integrity='sha256-elkrhekQZJea19VD3RcIIMKwl+j/Z15ZChaRftHMAgw=' crossorigin='anonymous')
