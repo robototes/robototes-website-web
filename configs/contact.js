@@ -228,7 +228,7 @@ module.exports = {
         },
         {
           type: 'website',
-          url: 'https://dannytech.github.io/'
+          url: 'https://dhellstern.me/'
         }
       ]
     },
